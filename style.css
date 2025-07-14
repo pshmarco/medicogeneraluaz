@@ -1,0 +1,106 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e6f0f7; /* Azul muy claro de fondo */
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+.main-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #1a4a75; /* Azul oscuro para el título principal */
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+.semestre-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.semestre {
+    background-color: #f0f7fb; /* Azul claro para el fondo del semestre */
+    border: 1px solid #cce0ec; /* Borde azul suave */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.semestre h2 {
+    color: #2a618e; /* Azul medio para los títulos de semestre */
+    font-size: 1.7em;
+    margin-top: 0;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #b3d9f0; /* Línea divisoria azul */
+    padding-bottom: 10px;
+}
+
+.ramos-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ramo {
+    background-color: #e0f2f7; /* Azul muy claro para ramos no aprobados */
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1em;
+    font-weight: 500;
+    text-align: center;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    border: 1px solid #c7e0ed; /* Borde más oscuro que el fondo del ramo */
+    color: #444; /* Color de texto estándar */
+}
+
+.ramo:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    background-color: #d0e7f0; /* Un poco más oscuro al pasar el mouse */
+}
+
+/* Estilo para ramos aprobados */
+.ramo.aprobado {
+    background-color: #a7d9b9; /* Verde suave para aprobado */
+    text-decoration: line-through;
+    color: #6a6a6a; /* Color de texto más tenue para aprobados */
+    border-color: #8ac09c;
+    opacity: 0.9;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.resumen-avance {
+    margin-top: 50px;
+    padding: 30px;
+    background-color: #bbdefb; /* Azul claro para el resumen */
+    border-radius: 12px;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #1a4a75; /* Azul oscuro para el texto del resumen */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid #90caf9;
+}
+
+.resumen-avance p {
+    margin: 8px 0;
+}
+
+.resumen-avance span {
+    font-weight: 700;
+    color: #0d47a1; /* Azul más intenso para los números */
+}
